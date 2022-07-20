@@ -1,0 +1,61 @@
+.switch {
+    height: 40px;
+    width: 150px;
+    border-radius: 50px;
+    background : linear-gradient(90deg, #767a8a, #b7abd1);    position: relative;
+    cursor: pointer;
+}
+
+.switch.dark {
+    background-image: linear-gradient(midnightblue, rebeccapurple) !important;
+    cursor: pointer;
+}
+
+
+.toggle_circle {
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    box-shadow: 0 0 5px black;
+    display: flex;
+    transition: all 0.3s ease;
+    background-image: url(/src/assets/ThemeSwitcherImages/lightSide.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.dark>.toggle_circle {
+    background-color: whitesmoke;
+    background-image: url(/src/assets/ThemeSwitcherImages/darkSide.jpg);
+    box-shadow: 0 0 5px whitesmoke;
+    transform: translate(110px, 0);
+}
+
+.shape {
+    position: absolute;
+    background-color: whitesmoke;
+    border-radius: 50%;
+}
+
+
+
+.dark_side {
+    color: white;
+    background-color: black;
+    min-height: 100vh;
+    transition: all 0.5ms ease;
+}
+
+.light_side {
+    background-color: white;
+    color: black;
+    display: flex;
+    min-height: 100vh;
+    transition: all 0.5ms ease;
+
+}
