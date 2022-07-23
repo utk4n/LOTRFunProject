@@ -5,7 +5,7 @@ export const ThemeSwitcher = createContext();
 
 const ThemeContext = (props) => {
 
-  const [theme, setTheme] = useState(false);
+  const [theme, setTheme] = useState(true);
 
   const themeData = {
     theme,

@@ -7,7 +7,6 @@ const LightSideText = () => {
     const numberGenerator = Math.floor(Math.random() * goodsQuotes.length)
     const quoteGenerator = goodsQuotes[numberGenerator].split(" ").map((el) => `${el.toString()} `).join("")
 
-    console.log(goodsQuotes)
     return (
         <>
             <h1> <span> {`${quoteGenerator}`} </span></h1>
