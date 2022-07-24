@@ -1,0 +1,109 @@
+.books_container {
+    background-color: rgba(0, 16, 136, 0.5);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.books_container input[type=checkbox] {
+    display: none;
+}
+
+.books_container h1 {
+    margin: 0;
+}
+
+.books_container #page1~.pages div.page1 {
+    transform: rotateY(-34deg);
+}
+
+.books_container #page1:checked~.pages div.page1 {
+    transform: rotateY(-140deg);
+}
+
+.books_container #page2~.pages div.page2 {
+    transform: rotateY(-32deg);
+}
+
+.books_container #page2:checked~.pages div.page2 {
+
+    transform: rotateY(-140deg);
+}
+
+.books_container #page3~.pages div.page3 {
+
+    transform: rotateY(-30deg);
+}
+
+.books_container #page3:checked~.pages div.page3 {
+
+    transform: rotateY(-140deg);
+}
+
+.books_container #page4~.pages div.page4 {
+
+    transform: rotateY(-28deg);
+}
+
+.books_container #page4:checked~.pages div.page4 {
+
+    transform: rotateY(-140deg);
+}
+
+.books_container .book {
+    position: relative;
+    width: 160px;
+    height: 180px;
+    margin-left: 160px;
+    perspective: 1000px;
+
+    transform-style: preserve-3d;
+}
+
+.books_container .book .pages,
+.books_container .book .pages>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.books_container .book .pages {
+    width: 100%;
+    height: 98%;
+    top: 1%;
+    left: 3%;
+    z-index: 10;
+}
+
+.books_container .book .pages > div {
+    width: 100%;
+    height: 100%;
+    transform-origin: left center;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    transition-timing-function: ease;
+    background: linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
+    box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1), inset -1px 0px 1px rgba(150, 150, 150, 0.2);
+    border-radius: 0px 5px 5px 0px;
+    -webkit-transition-duration: 1s;
+}
+
+.books_container .book .pages>div:hover {
+    box-shadow: inset 1px 0px 2px rgba(50, 50, 50, 0.1), inset -3px 1px 1px rgba(150, 150, 150, 0.2);
+}
+
+.books_container .book .pages>div label {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+}

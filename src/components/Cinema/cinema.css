@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Mirza&family=Playfair+Display:ital,wght@0,400;0,500;0,800;1,400&family=Roboto:wght@300;400&display=swap');
+
+:root {
+    --ff-mirza: 'Mirza', cursive;
+    --ff-playfair: 'Playfair Display', serif;
+    --ff-roboto: 'Roboto', sans-serif;
+
+}
+
+
+.cinema {
+    width: 100%;
+    background-color: black;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(/src/assets/Cinema/cinemascreen.png);
+}
+
+.movieYoutube {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.movieYoutube iframe {
+    margin-top: -25px;
+    width: 800px;
+    height: 450px;
+}
+
+
+.cinema .choose {
+    display: flex;
+    width: max-content;
+    align-items: center;
+    justify-content: center;
+    min-height: auto;
+    margin-top: 30px;
+    color: white;
+    font-size: 25px;
+    flex-direction: column;
+
+}
+
+
+.cinema select {
+    border: 2px solid #CFC547;
+    outline: none;
+    text-align: center;
+    background-color: transparent;
+    color: #CFC547;
+    padding: 10px;
+    font-size: 22px;
+    font-family: var(--ff-mirza);
+    appearance: none;
+    transition: all 0.5s;
+    border-radius: 15px;
+    text-shadow: 10px 10px 25px rgb(81 67 21), -10px 10px 25px rgb(81 67 21), -10px -10px 25px rgb(81 67 21), 10px -10px 25px rgb(81 67 21)
+}

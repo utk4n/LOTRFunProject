@@ -1,5 +1,5 @@
 import { movieSeries } from './LinkInfos'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 const NavLinks = () => {
 
@@ -23,9 +23,9 @@ const NavLinks = () => {
         {show && (<ul className='movie_series_ul'>{movieSeriesIterator}</ul>)}
       </div>
 
-      <Link to="/">Book Series</Link>
       <Link to="/map">The Realm of Middle-Earth</Link>
       <Link to="/favourites">Favourites</Link>
+      <Link to="/cinema">Popcorn</Link>
 
     </div>
   )

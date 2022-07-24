@@ -1,8 +1,21 @@
-const fetcher = async () => {
+import { useState, useCallback } from "react";
 
-   await fetch("https://lotrprojectapi-default-rtdb.firebaseio.com/characters.json").then(res => res.json()).then(data => data)
+const useFirebase = () => {
+
+    const [data, setData] = useState({})
+
+    const fetcher = useCallback( async (apiUrl) => {
+        const grabDatas = await fetch(apiUrl).then(res => res.json()).then(data => data).catch(error => console.log(error))
+        setData(grabDatas)
+    },[])
+
+return{
+    data,
+    fetcher
+}
+
 }
 
 
 
-export default fetcher;
+export default useFirebase;
